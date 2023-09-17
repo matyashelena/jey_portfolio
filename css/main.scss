@@ -1,0 +1,334 @@
+@import 'reset';
+
+$mainFontFamily: 'Urbanist', sans-serif;
+$accentColor: #FF5057;
+
+@mixin button() {
+  padding: 17px 60px;
+  font-size: 18px;
+  background-color: $accentColor;
+  border-radius: 4px;
+}
+
+.page_wrapper {
+  background-color: #1F1F1F;
+  font-family: $mainFontFamily;
+  color: #fff;
+  font-weight: 600;
+}
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.container_big {
+  width: 90%;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+.button {
+  @include button();
+}
+.header {
+  padding: 20px 0;
+  .container_big {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
+  display: flex;
+  // padding: 13px 0;
+  align-items: center;
+  column-gap: 20px;
+}
+.logo_circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_logo {
+  width: 25px;
+  height: 35px;
+}
+.name_company {
+  width: 56px;
+  height: 29px;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+  }
+  &-item {
+    font-size: 18px;
+    position: relative;  
+    a {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+  .button {
+    margin-left: 90px;
+  }
+}
+.flag {
+  font-size: 12px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    justify-content: center;
+    column-gap: 2px;
+    position: absolute;
+    right: 10px;
+    top: -50%;
+    width: 36px;
+    height: 32px;
+    background-image: url(../img/flag.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    img {
+      width: 5.33px;
+    }
+}
+.digital_design {
+  padding-top: 95px;
+  padding-bottom: 160px;
+  .main_title {
+    font-size: 100px;
+    margin-bottom: 5px;
+  }
+  .sub_title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 100%;
+    max-width: 560px;
+    margin-bottom: 60px;
+  }
+}
+.title {
+  text-transform: uppercase;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  position: relative;
+  &_title {
+    position: absolute;
+    top: 97px;
+    left: 40px;
+    font-size: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 367px;
+    background-color: #000;
+    aspect-ratio: 367/460;object-fit: cover;background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .card1 {
+    background-image: url(../img/pretty-girl-with-bicycle.jpg);
+    
+  }
+  .card2 {
+    background-image: url(https://img.freepik.com/free-photo/mother-and-daughter-drawing_1157-15407.jpg?w=996&t=st=1694949324~exp=1694949924~hmac=743cfd4f7be6f971221b49101a43e0ff90f01e2e0fec84e172c347ab388f664e);
+    
+  }
+  .card3 {
+    background-image: url(https://img.freepik.com/free-photo/cheerful-african-curly-young-lady-wearing-yellow-coat_171337-15151.jpg?w=996&t=st=1694950092~exp=1694950692~hmac=44d70a4d12175db58b056232d4bc162b649147b37f5c318f77042d06c244aef1);
+  }
+}
+.web_design {
+  background-color: #000;
+  padding: 160px 0;
+  .title {
+    font-size: 46px;
+    margin-bottom: 60px;
+  }
+  &-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+  &-card {
+    display: flex;
+    width: 100%;
+    min-height: 618px;
+    &-descroption {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 60px 68px 60px;
+      width: 50%;
+      background-color: #fff;
+      .date {
+        display: inline-block;
+        color: #898989;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+      }
+      .card_title {
+        color: #000;
+        font-size: 36px;
+        margin-bottom: 28px;
+      }
+      .marker {
+        color: #676767;
+        font-size: 18px;
+        padding-left: 23px;
+        margin-right: 45px;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #676767;
+        }
+      }
+      .card-description {
+        color: #000;
+        font-weight: 400;
+        line-height: 180%;
+        margin-bottom: 40px;
+      }
+      .link_website {
+        color: $accentColor;
+        font-size: 18px;
+        position: relative;
+        padding-right: 30px;
+        margin-left: 40px;
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-image: url(../img/right-arrows.svg);
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+
+        }
+      }
+      
+
+    }
+    &-image {
+      width: 50%;
+      overflow: hidden;
+      background-color: #343435;
+      position: relative;
+      .image_first {
+        width: 325px;
+        position: absolute;
+        top: 63px;
+        left: 60px;
+        z-index: 2;
+      }
+      .image_second {
+        width: 247px;
+        position: absolute;
+        bottom: 38px;
+        right: 24px;
+      }
+      .image {
+        width: 621px;
+      }
+    }
+  }
+}
+.graphic_design {
+  padding-top: 126px;
+  padding-bottom: 250px;
+  .container {
+    position: relative;
+  }
+  .title {
+    margin-bottom: 60px;
+  }
+}
+.graphic_card {
+  width: calc(50% - 10px);
+  &-image {
+    background-color: #D9D9D9;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .date {
+    color: #ccc;
+  }
+  .card_title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 450px;
+  }
+  .link_more {
+    display: inline-block;
+    color: $accentColor;
+    font-size: 18px;
+    margin-bottom: 140px;
+  }
+}
+.graphic_card-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.circle {
+  position: absolute;
+  bottom: -150px;
+  right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 341px;
+  height: 343px;
+  background-image: url(../img/circle_text.svg);
+}
+.arrow_down {
+  width: 80px;
+  height: 80px;
+}
+
