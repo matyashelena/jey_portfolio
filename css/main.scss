@@ -319,8 +319,8 @@ $accentColor: #FF5057;
 .link_circle {
   position: absolute;
   bottom: 0;
-  right: -25%;
-  transform: translateX(-50%);
+  right: 10%;
+  // transform: translateX(-50%);
 }
 .circle {
   width: 341px;
@@ -385,7 +385,7 @@ $accentColor: #FF5057;
   &_social-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     column-gap: 80px;
     a {
       display: inline-block;
