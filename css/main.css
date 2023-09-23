@@ -74,6 +74,10 @@ img {
   display: flex;
   align-items: center;
   column-gap: 20px;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .logo_circle {
@@ -190,6 +194,11 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
+  transition: all 0.3s ease;
+}
+.cards .card:hover {
+  transform: scaleY(1.1);
+  color: #FF5057;
 }
 .cards .card::before {
   content: "";

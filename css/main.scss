@@ -48,6 +48,10 @@ $accentColor: #FF5057;
   // padding: 13px 0;
   align-items: center;
   column-gap: 20px;
+  transition: all .3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .logo_circle {
   width: 63px;
@@ -155,6 +159,11 @@ $accentColor: #FF5057;
     background-size: cover;
     background-position: center;
     position: relative;
+    transition: all .3s ease;
+    &:hover {
+      transform: scaleY(1.1);
+      color: $accentColor;
+    }
     &::before {
       content: '';
       display: block;
