@@ -53,6 +53,12 @@ img {
   font-size: 18px;
   background-color: #FF5057;
   border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #fff;
+  border: 1px solid #FF5057;
+  color: #FF5057;
 }
 
 .header {
@@ -106,6 +112,10 @@ img {
 .header_nav-item a {
   display: inline-block;
   padding: 10px;
+  transition: all 0.3s ease;
+}
+.header_nav-item a:hover {
+  transform: scale(1.1);
 }
 .header_nav .button {
   margin-left: 90px;
@@ -341,6 +351,10 @@ img {
   color: #FF5057;
   font-size: 18px;
   margin-bottom: 140px;
+  transition: all 0.3s ease;
+}
+.graphic_card .link_more:hover {
+  transform: scale(1.1);
 }
 
 .graphic_card-right {
@@ -437,4 +451,8 @@ img {
 .icon_social {
   width: 40px;
   height: 40px;
+  transition: all 0.3s ease;
+}
+.icon_social:hover {
+  --color: #FF5057;
 }

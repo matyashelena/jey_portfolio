@@ -28,6 +28,12 @@ $accentColor: #FF5057;
 }
 .button {
   @include button();
+  transition: all .3s ease;
+  &:hover {
+    background-color: #fff;
+    border: 1px solid $accentColor;
+    color: $accentColor;
+  }
 }
 .header {
   padding: 20px 0;
@@ -70,11 +76,17 @@ $accentColor: #FF5057;
   }
   &-item {
     font-size: 18px;
-    position: relative;  
+    position: relative;
+    
     a {
       display: inline-block;
       padding: 10px;
+      transition: all .3s ease;
+      &:hover {
+      transform: scale(1.1);
     }
+    }
+    
   }
   .button {
     margin-left: 90px;
@@ -308,6 +320,10 @@ $accentColor: #FF5057;
     color: $accentColor;
     font-size: 18px;
     margin-bottom: 140px;
+    transition: all .3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 .graphic_card-right {
@@ -400,4 +416,8 @@ $accentColor: #FF5057;
 .icon_social {
     width: 40px;
     height: 40px;
+    transition: all .3s ease;
+    &:hover {
+      --color: #FF5057;
+    }
   }
