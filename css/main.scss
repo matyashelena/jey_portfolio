@@ -8,6 +8,7 @@ $accentColor: #FF5057;
   font-size: 18px;
   background-color: $accentColor;
   border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .page_wrapper {
@@ -51,20 +52,25 @@ $accentColor: #FF5057;
   transition: all .3s ease;
   &:hover {
     transform: scale(1.1);
+    --color: #FF5057;
+    --col: #FF5057;
+    --col1: #fff;
   }
 }
 .logo_circle {
   width: 63px;
   height: 63px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--col, #fff);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .3s ease;
 }
 .icon_logo {
   width: 25px;
   height: 35px;
+  transition: all .3s ease;
 }
 .name_company {
   width: 56px;
@@ -88,6 +94,7 @@ $accentColor: #FF5057;
       transition: all .3s ease;
       &:hover {
       transform: scale(1.1);
+      color: $accentColor;
     }
     }
     
@@ -253,10 +260,15 @@ $accentColor: #FF5057;
       }
       .link_website {
         color: $accentColor;
+        display: inline-block;
         font-size: 18px;
         position: relative;
         padding-right: 30px;
         margin-left: 40px;
+        transition: all .3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
         &::before {
           position: absolute;
           content: '';
@@ -347,6 +359,11 @@ $accentColor: #FF5057;
   right: 10%;
   width: 341px;
   height: 343px;
+  transition: all .3s ease;
+  &:hover {
+    --color: #FF5057;
+    transform: scale(1.1);
+  }
   // transform: translateX(-50%);
 }
 .circle {
@@ -363,6 +380,10 @@ $accentColor: #FF5057;
   transform: translate(-50%, -50%);
   width: 80px;
   height: 80px;
+  transition: all .3s ease;
+  // &:hover {
+  //   --color: #FF5057;
+  // }
 }
 .root {
   animation: 20s linear 0s normal none infinite running root;
@@ -396,6 +417,10 @@ $accentColor: #FF5057;
     font-size: 46px;
     letter-spacing: 1.84px;
     margin-bottom: 140px;
+    transition: all .3s ease;
+    &:hover {
+      color: $accentColor;
+    }
   }
   &_author {
     opacity: 0.6;
